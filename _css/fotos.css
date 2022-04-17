@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+#album{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none; 
+}
+ #album > li{
+     float: left;
+     width: 200px;
+     height: 200px;
+     margin: 10px;
+     border: 5px solid white;
+     background-color: white;
+     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4) ;
+     transition: all .5s ease-in;
+ }
+
+ #album > li > span {
+     opacity: 0;
+     color: white;
+     text-shadow: 1px 1px 1px black ;
+     background-color: rgba(0, 0, 0, 0.4);
+     font-size: 10pt;
+     line-height: 375px; 
+     padding: 4px;
+    }
+#album > li:hover{
+    transform: scale(1.5);
+}
+    
+ #album > li:hover span{
+     opacity: 1;
+ }   
+
+ #album >#fotos01 {
+     background: url('../_imagens/galeria-01.jpg') no-repeat;
+     background-position: 50% 50%;
+     background-size: 400px 400px;
+     background-color: white;
+ }
+#album > #fotos01:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ #album >#fotos02 {
+    background: url('../_imagens/galeria-02.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+#album > #fotos02:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+#album >#fotos03 {
+    background: url('../_imagens/galeria-03.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+#album > #fotos03:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+#album >#fotos04 {
+    background: url('../_imagens/galeria-04.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+
+#album > #fotos04:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+#album >#fotos05 {
+     background: url('../_imagens/galeria-05.jpg') no-repeat;
+     background-position: 50% 50%;
+     background-size: 400px 400px;
+     background-color: white;
+ }
+
+ #album > #fotos05:hover{
+     background-position: 0px 0px;
+     background-size: 200px 200px;
+ }
+
+ #album >#fotos06 {
+     background: url('../_imagens/galeria-06.jpg') no-repeat;
+     background-position: 50% 50%;
+     background-size: 400px 400px;
+     background-color: white;
+ }
+
+ #album > #fotos06:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+/* cabecalho das imagens*/
+
+header#cabecalho-artigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 23pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}    
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color:#cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 14px;
+    color: #606060;
+}   
+
+

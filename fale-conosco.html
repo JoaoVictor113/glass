@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">  
+<head>
+<meta charset="utf-8"> 
+<title>Tudo sobre Google Glass</title>  
+<link rel="stylesheet" href="_css/form.css">
+<link rel="stylesheet" href="_css/estilo.css">
+</head>
+
+<script language="javascript" src="_javascript/funcoes.js"></script>  
+
+<body> 
+    <div id= "interface">  
+
+        <header id="cabecalho">
+            <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2> A revolução do Google está chegando</h2>
+            </hgroup>
+
+    <img id="oculos" src="_imagens/glass-oculos-preto-peq.png">
+
+    <nav id="menu" onmouseout="mudaFoto('_imagens/contato.png')">
+        <h1>Menu Principal</h1>
+        <ul>
+            <li onmouseover="mudaFoto('_imagens/Home.png')"><a href="index.html">Home</a></li>
+            <li onmouseover="mudaFoto('_imagens/especificacoes.png')"> <a href="specs.html">Especificações</a></li> 
+            <li onmouseover="mudaFoto('_imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
+            <li onmouseover="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+            <li onmouseover="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+        </ul>
+    </nav>   
+        </header>
+
+        <section id="corpo-full">
+            <article id="noticia-principal">
+               <header id="cabecalho-artigo">
+                   <h3>Fale conosco  > contato</h3>
+                   <h1>Formulário de contato</h1>
+                   <h2>por: João Victor A.</h2>
+                   <h3 class="d">Atualizado em 17/Junho/2021</h2>
+               </header>
+
+        <form method="POST" id="fcontato" action="mailto:joaovictoravalente@gmail.com">       
+           <fieldset id="usuario"> 
+                <legend>Identificação do Usuário</legend>
+                <p> <label for="bNome">Nome:</label> <input type="text" name="aNome" id="bNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+                <p> <label for="bSenha">Senha:</label>   <input type="password" name="aSenha" id="bSenha" size="10" maxlength="10" placeholder="10 Dígitos"/></p>
+                <p> <label for="bEmail">E-mail:</label>  <input type="email" name="aEmail" id="bEmail"/></p>
+
+                    <fieldset id="sexo">    
+                        <legend>Sexo:</legend>
+                          <input type="radio" name="aSexo" id="bMasc"/> <label for="bMasc">Masculino</label> <br/>
+                          <input type="radio" name="aSexo" id="bFem"/> <label for="bFem">Feminino</label>
+                    </fieldset>
+                <p> <label for="bData"> Data de Nascimento:</label> <input type="date" name="aData" id="bData"/> </p>
+            </fieldset>
+
+            <fieldset id="endereco">
+                <legend>Endereço do Usuário</legend>
+                   <p> <label for="bRua">Logradouro:</label> <input type="text" name="aRua" id="bRua" placeholder="Rua, Av, Trav.."/></p>
+                    <P> <label for="bNum">Número:</label>  <input type="number" name="aNum" id="bNum" min="0" max="99999"/></P>
+                    <p> <label for="bEst">Estado:</label>
+                   <select name="aEst" id="bEst">
+                        <option value="DF">Brasília</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SC">Santa Catarina</option>
+                   </select> </p>
+                    <p> <label for="bCid"> Cidade:</label>
+                    <input type="text" name="aCid" id="bCid" maxlength="40" size="20" placeholder="Sua Cidade"></p>
+            </fieldset>
+
+            <fieldset id="mensagem">
+                <legend>Mensagem do Usuário</legend>
+                <p> <label for="bUrg"> Grau de Urgência:</label>
+               Mín <input type="range" name="aUrg" id="bUrg" min="0" max="10" step="2">Máx</p>
+                <p> <label for="bMsg">Mensagem:</label>
+              <textarea name="bMsg" id="aMsg" cols="45" rows="5" placeholder="Deixe aqui sua Mensagem"></textarea>  </p>
+            </fieldset>
+
+<footer id="rodape">
+    <p> Copyrigh &copy; 2021 - by João Victor A. <br/> <br/>
+    <a href=https://www.facebook.com/profile.php?id100004062800622 target="_blank">Facebook</a> |
+    <a href="http://instagram.com/joao_victor_araujo_" target="_blank">Instagram</a></p>       
+</footer>
+</div>  
+</body>
+</html>

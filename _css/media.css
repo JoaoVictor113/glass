@@ -1,0 +1,42 @@
+#tv {
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background: url("../_imagens/radio-tv.png") no-repeat;
+}
+ #musica {
+     display: block;
+     position: relative;
+     width: 300px;
+     top: 489px;
+     left: 575px; 
+ }
+ #filme{
+     display: block;
+     position: relative;
+     width: 400px;
+     top: 90px;
+     left: 120px;
+ }
+
+/* cabecalho das multimidia*/
+
+header#cabecalho-artigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 23pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}    
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color:#cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 14px;
+    color: #606060;
+}   
