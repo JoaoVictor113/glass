@@ -8,6 +8,13 @@
 </head>
 
 <script language="javascript" src="_javascript/funcoes.js"></script>  
+<script>
+    function calc_total(){
+      var qtd = parseInt(document.getElementById('cQtd').value);
+      tot = qtd * 1200;
+      document.getElementById('cTot').value = tot; 
+    }
+</script>
 
 <body> 
     <div id= "interface">  
@@ -41,7 +48,7 @@
                    <h3 class="d">Atualizado em 17/Junho/2021</h2>
                </header>
 
-        <form method="POST" id="fcontato" action="mailto:joaovictoravalente@gmail.com">       
+        <form method="POST" id="fcontato" action="mailto:joaovictoravalente@gmail.com" oninput="calc_total()">       
            <fieldset id="usuario"> 
                 <legend>Identificação do Usuário</legend>
                 <p> <label for="bNome">Nome:</label> <input type="text" name="aNome" id="bNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
@@ -76,10 +83,20 @@
                 <p> <label for="bUrg"> Grau de Urgência:</label>
                Mín <input type="range" name="aUrg" id="bUrg" min="0" max="10" step="2">Máx</p>
                 <p> <label for="bMsg">Mensagem:</label>
-              <textarea name="bMsg" id="aMsg" cols="45" rows="5" placeholder="Deixe aqui sua Mensagem"></textarea>  </p>
+              <textarea name="bMsg" id="aMsg" cols="35" rows="5" placeholder="Deixe aqui sua Mensagem"></textarea>  </p>
             </fieldset>
 
-<footer id="rodape">
+            <fieldset id="pedido">
+                <legend>Quero um Google Glass</legend>
+                <p> <input type="checkbox" name="tPed" id="cPed"> <label for="bPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                <p> <input type="color" name="tCor" id="cCor" value="#0000ff"> <label for="bCor"> Cor:</label></p>
+                <p> <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"> <label for="bQtd"> Quantidade:</label></p>
+                <p> <label for="bTot">Preço Total: R$</label> <input type="text" name="tTot" id="cTot" placeholder="Total a pagar"> </p>
+        </form>
+
+        <input type="image" name="tEnviar" src="_imagens/botao-enviar.png"> <br>
+
+        <footer id="rodape">
     <p> Copyrigh &copy; 2021 - by João Victor A. <br/> <br/>
     <a href=https://www.facebook.com/profile.php?id100004062800622 target="_blank">Facebook</a> |
     <a href="http://instagram.com/joao_victor_araujo_" target="_blank">Instagram</a></p>       
